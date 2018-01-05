@@ -1,48 +1,46 @@
-// var names = ['Rick', 'Morty', 'Jerry', 'Summers', 'Beth'];
+// EXAMPLE: Anonymous functions vs arrow functions
+// var names = ['Andrew', 'Julie', 'Jen'];
 //
-// names.forEach(function (name){
+// names.forEach(function (name) {
 //   console.log('forEach', name);
 // });
 //
 // names.forEach((name) => {
 //   console.log('arrowFunc', name);
-//   console.log('something')
 // });
 //
 // names.forEach((name) => console.log(name));
-//
+
+// EXAMPLE: Implicit return values
 // var returnMe = (name) => name + '!';
-// console.log(returnMe('Rick Sanchez'));
-//
+// console.log(returnMe('Andrew'));
+
+
+// EXAMPLE: Unmodified this binding
 // var person = {
-//   name: 'Rick',
+//   name: 'Andrew',
 //   greet: function () {
 //     names.forEach((name) => {
-//       console.log(this.name + ' says hi to ' + name);
+//       console.log(this.name + ' says hi to ' + name)
 //     });
 //   }
 // };
 //
 // person.greet();
 
-//Challenge Area
+// Challenge Area
 function add (a, b) {
   return a + b;
 }
+// console.log(add(1, 3));
+// console.log(add(9, 0));
 
-//addStatement
-
+// addStatement
 var addStatement = (a, b) => {
   return a + b;
 }
+// console.log(addStatement(4, 7));
 
-console.log(addStatement(4, 7));
-
-//addExpression
-
+// addExpression
 var addExpression = (a, b) => a + b;
-
 console.log(addExpression(3, -2));
-
-// console.log(add(1, 3));
-// console.log(add(9, 0));
